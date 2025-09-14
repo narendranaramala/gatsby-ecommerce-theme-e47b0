@@ -16,7 +16,10 @@ const Banner = (props) => {
 
   const customStyling = {
     backgroundColor: bgColor,
-    backgroundImage: bgImage !== undefined ? `url(${toOptimizedImage(bgImage)})` : 'none',
+    backgroundImage:
+      bgImage !== undefined
+        ? `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${toOptimizedImage(bgImage)})`
+        : 'none',
     height: height,
     color: color,
   };

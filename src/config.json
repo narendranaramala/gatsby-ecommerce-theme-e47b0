@@ -137,6 +137,11 @@
       "menuLabel": "About",
       "menuLink": "/about",
       "category": null
+    },
+    {
+      "menuLabel": "Videos",
+      "menuLink": "/videos",
+      "category": null
     }
   ],
   "filters": [

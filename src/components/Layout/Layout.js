@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import Header from '../Header';
-import Footer from '../Footer';
 import * as styles from './Layout.module.css';
 
 // CSS not modular here to provide global styles
@@ -14,6 +13,9 @@ const Layout = ({ props, children, disablePaddingBottom = false }) => {
     <>
       <Helmet>
         {/* Add any sitewide scripts here */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" as="image" href="/banner2.png" imagesizes="100vw" />
         <link
           rel="stylesheet"
           type="text/css"
@@ -35,7 +37,7 @@ const Layout = ({ props, children, disablePaddingBottom = false }) => {
       >
         {children}
       </main>
-      <Footer />
+      {/* No footer */}
     </>
   );
 };

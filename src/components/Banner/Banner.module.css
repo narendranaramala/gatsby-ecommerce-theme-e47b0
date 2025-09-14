@@ -18,14 +18,16 @@
 }
 
 .content h2 {
-    font-size: 52px;
-    line-height: 62px;
-    font-weight: normal;
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }
 
 .subtitle {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 @media (max-width: 800px) {
@@ -39,7 +41,7 @@
     }
 
     .content h2 {
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 38px;
+        line-height: 44px;
     }
 }

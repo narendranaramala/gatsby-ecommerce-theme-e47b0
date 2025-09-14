@@ -10,3 +10,14 @@
   to = "/.netlify/images?url=/:splat&fm=webp"
   status = 200
   force = true
+
+## Cache hero/logo aggressively
+[[headers]]
+  for = "/brand.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/banner2.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
